@@ -11,10 +11,11 @@ import psycopg2  # Imports the psycopg2 library.
 def connect():
     		
 	try:
-        conn = psycopg2.connect("dbname=news")
-        return conn
-    except Exception as err:
-        print(err)
+		conn = psycopg2.connect("dbname=news")
+		return conn
+	except Exception as err:
+		print(err)		
+	
 
 # A method that accepts the result of an sql query,
 # and two headers.
